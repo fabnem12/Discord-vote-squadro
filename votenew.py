@@ -149,7 +149,7 @@ def main():
             if auteurId != ctx.author.id:
                 return
 
-            if len(election.candidats) > 2: #on peut commencer le vote, il y a plusieurs candidats
+            if len(election.candidats) >= 2: #on peut commencer le vote, il y a plusieurs candidats
                 election.commence = True
 
                 try:
