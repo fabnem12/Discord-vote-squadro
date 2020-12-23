@@ -1,12 +1,8 @@
 import asyncio
 import discord
 
-try:
-    from constantes import prefixeBot, TOKEN
-    from libvote import Votant, Election
-except ImportError:
-    from .constantes import prefixeBot, TOKEN
-    from .libvote import Votant, Election
+from constantes import prefixeBot, TOKEN
+from libvote import Votant, Election
 
 ELECTIONS = dict() #associe à un identifiant d'élection un tuple : l'objet Election correspondant, et l'id discord de la personne qui l'a lancée
 MSG2DUEL = dict() #associe un message à un duel (objet votant + duel)
